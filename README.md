@@ -20,3 +20,5 @@ When a new template is done. You should also consider doing a `composer require 
   - `bugfix/name-of-the-bug`, for bug fixes.
 - When a version of is ready for QA, you should first `git merge dev` into the branch you're about to test (to make sure it's current). Then deploy the branch to stage. If it passes, merge it into the `dev` branch. 
 - When you're ready to deploy to live, `git merge dev` into your master branch and deploy master.
+
+## [SEO](ubiweb-media/workflow/edit/master/README.md)
