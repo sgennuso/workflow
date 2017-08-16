@@ -29,13 +29,17 @@ When a new template is done. You should also consider doing a `composer require 
 - Adjust `.env` with the following:
   ```
   CORE_PATH=/var/www/ubiweb/ubiweb-core
-  SUBDIR=/domain.com
   ```
 - Run `git pull origin master` whenever you need to update stage.
 
-The domain will be available at stage.ubiweb.ca/domain.com
+The domain will be available at domain.com.stage.ubiweb.ca
 
 ### Production
+
+- Create an add-on domain in [Plesk](https://67.207.89.241:8443) under the `ubiweb.ca` subscription.
+- SSH into the server and adjust `.env` and change `CORE_PATH=/var/www/httpdocs/ubiweb-core`
+- `git pull origin master` in the under the domain to deploy any updates.
+- Point `domain.com` nameservers to `nash.ns.cloudflare.com` & `rose.ns.cloudflare.com`
 
 ## SEO
 
