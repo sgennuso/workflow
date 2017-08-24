@@ -25,10 +25,11 @@ When a new template is done. You should also consider doing a `composer require 
 
 ### Staging
 - SSH into the staging server at 165.227.64.23
-- `cd /var/www/ubiweb && git clone https://github.com/ubiweb-media/domain.com`
+- `cd /var/www/stage.ubiweb.ca && git clone https://github.com/ubiweb-media/domain.com`
 - Adjust `.env` with the following:
   ```
   CORE_PATH=/var/www/ubiweb/ubiweb-core
+  SUBDIR=domain.com
   ```
 - Run `git pull origin master` whenever you need to update stage.
 
