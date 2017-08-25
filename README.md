@@ -26,6 +26,7 @@ When a new template is done. You should also consider doing a `composer require 
 ### Staging
 - SSH into the staging server at 165.227.64.23
 - `cd /var/www/stage.ubiweb.ca && git clone https://github.com/ubiweb-media/domain.com`
+- `composer install`
 - Adjust `.env` with the following:
   ```
   CORE_PATH=/var/www/ubiweb/ubiweb-core
@@ -33,7 +34,7 @@ When a new template is done. You should also consider doing a `composer require 
   ```
 - Run `git pull origin master` whenever you need to update stage.
 
-The domain will be available at domain.com.stage.ubiweb.ca
+The domain will be available at https://stage.ubiweb.ca/domain.com/
 
 ### Production
 
