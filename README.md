@@ -21,12 +21,17 @@ When a new template is done. You should also consider doing a `composer require 
 - When a version of is ready for QA, you should first `git merge dev` into the branch you're about to test (to make sure it's current). Then deploy the branch to stage. If it passes, merge it into the `dev` branch. 
 - When you're ready to deploy to live, `git merge dev` into your master branch and deploy master.
 
+## Dev Setup
+- Set up [ubiweb core and domain](https://github.com/ubiweb-media/ubiweb-domain)
+- `cd domain.com` and run PHP server with: `php -S localhost:9000`
+- Preview your site on [localhost:9000](http://localhost:9000)
+
 ## Deployment
 
 ### Staging
-- SSH into the staging server at 165.227.64.23
+- SSH into the staging server at 165.227.64.23 (`ssh root@165.227.64.23` - your key needs to be installed first.)
 - `cd /var/www/stage.ubiweb.ca && git clone https://github.com/ubiweb-media/domain.com`
-- `composer install`
+- `cd domain.com && composer install`
 - Adjust `.env` with the following:
   ```
   CORE_PATH=/var/www/ubiweb/ubiweb-core
