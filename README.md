@@ -24,6 +24,7 @@ When a new template is done. You should also consider doing a `composer require 
 
 ## Dev Setup
 - Set up [ubiweb core and domain](https://github.com/ubiweb-media/ubiweb-domain)
+- Install dependicies with `composer install`
 - `cd domain.com` and run PHP server with: `php -S localhost:9000`
 - Preview your site on [localhost:9000](http://localhost:9000)
 
