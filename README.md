@@ -9,7 +9,8 @@
 When a new template is done. You should also consider doing a `composer require ubiweb/template` on a specially set up domain, like https://templates.ubiweb.ca, so you have a catalog of templates. Also add to the names of templates on the `template-starter` README.
 
 ## For a developer creating a new ubiweb domain.
-- Admin creates a fork of [ubiweb-domain](https://github.com/ubiweb-media/ubiweb-domain) with the client's domain as the name `domain.com`. 
+- Admin creates a new repository with the client's domain as the name `domain.com`. 
+- Use the **import** option from github to import the code from: [ubiweb-domain](https://github.com/ubiweb-media/ubiweb-domain.git)
 - Provide the new repo to your internal developer, who should have full read/write access. They can go through the setup instructions if it's their first time, or simply clone the domain to their domains directory and run their PHP server.
 - The `master` branch is the branch that is live on the client's domain. So careful QA should be given to it. 
 - The `dev` branch is the main branch used for development. Changes or features should be created as their own branch and merged into this branch. Development is never done directly on this branch.
