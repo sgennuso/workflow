@@ -36,7 +36,7 @@ When a new template is done. You should also consider doing a `composer require 
 - `cd domain.com && composer install`
 - Adjust `.env` with the following:
   ```
-  CORE_PATH=/var/www/ubiweb/ubiweb-core
+  CORE_PATH=/var/www/ubiweb-core
   SUBDIR=domain.com
   ```
 - Run `git pull origin master` whenever you need to update stage.
